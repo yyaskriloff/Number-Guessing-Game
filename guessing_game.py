@@ -40,7 +40,7 @@ def start_game():
 
 
 
-    print("Glad you joined us. We're gonna be playing a guissing game")
+
     # creating a function that asks for guesses while adding to trys
     def prompter():
         nonlocal trys
@@ -87,7 +87,7 @@ def start_game():
     else:
         print("you tied the high score")
 
-
+print("Glad you joined us. We're gonna be playing a guissing game")
 start_game()
 
 #  function that answers if player would like to play again
