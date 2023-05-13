@@ -45,11 +45,11 @@ def start_game():
     def prompter():
         nonlocal trys
         trys += 1
-        return input("Choose a number from 1 - 10\n")
+        return input("Choose a number from 1 - 1000\n")
 
     #  declairing game var
     trys = 0
-    answer = random.randint(1, 10)
+    answer = random.randint(1, 1000)
     
     #  declairing guess so fails first loop
     guess = 0
@@ -68,8 +68,8 @@ def start_game():
                 guess = prompter()
 
         # letting user know if they guessed higher or lowwer than answer and checking if guess is within the range(1 - 10)
-        if guess < 1 or guess > 10:
-            print("number was not between 1 and 10")
+        if guess < 1 or guess > 1000:
+            print("number was not between 1 and 1000")
             guess = prompter()
         elif guess < answer:
             print("Higher")
